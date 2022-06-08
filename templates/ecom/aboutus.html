@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Leaf-Now</title>
+
+  <title>Leaf-Now</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: black;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center; color: white;">Ever since industrialisation started the care for plants has made it to our least priority list, Even though mankind requires plants to balance the food chain that he’s a part of, but the plant enthusiasts are everywhere, be it big metropolitan cities or rural areas, so we aim to bring in a platform that can connect these plant/nature enthusiasts and help them exchange/sell them plants or donate seeds/plants as part of the green initiative that we started 2 years back. </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
